@@ -157,8 +157,8 @@ while :; do
   fi
 done
 
-read -p "What base directory should the node use (defaults to ~/.shardeum): " NODEHOME
-NODEHOME=${NODEHOME:-~/.shardeum}
+read -p "What base directory should the node use (defaults to ~/shardeum): " NODEHOME
+NODEHOME=${NODEHOME:-~/shardeum}
 
 if read -t 100000 -sp "What priv_key node will use (priv_key from Metamask): " PRIV_KEY; then
 echo -e "\nSecret passphrase = '$PRIV_KEY'"
